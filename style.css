@@ -105,7 +105,7 @@ button {
 .projects > article {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 3;
+  grid-row: span 4;
   padding: 1em;
   border: 1px solid var(--border-color);
   border-radius: 0.5em;
@@ -113,6 +113,13 @@ button {
 }
 
 .projects h2 {
+  margin: 0;
+}
+
+.projects .year {
+  font-family: Baskerville, serif;
+  font-variant-numeric: oldstyle-nums;
+  color: #999;
   margin: 0;
 }
 
@@ -182,6 +189,61 @@ ul {
   margin: 0;
   font-size: 1.5em;
   color: var(--color-accent);
+}
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+}
+
+#projects-pie-plot path {
+  cursor: pointer;
+  transition: 300ms;
+}
+
+#projects-pie-plot:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
+.container {
+  display: flex;
+  gap: 2em;
+  align-items: start;
+}
+
+.legend {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 1em;
+  list-style: none;
+  padding: 1em;
+  margin: 2em 0;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5em;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.legend .swatch {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: var(--color);
+  border-radius: 0.25em;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+}
+
+.selected:is(path) {
+  fill: var(--color);
 }
 
 @media (max-width: 600px) {
