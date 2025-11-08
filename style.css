@@ -305,6 +305,7 @@ dl.info[hidden]:not(:hover, :focus-within) {
   border-radius: 0.5em;
   padding: 1em;
   backdrop-filter: blur(10px);
+  color: white;
 }
 
 circle {
