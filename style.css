@@ -347,6 +347,13 @@ circle.selected {
   text-decoration: underline;
 }
 
+.projects img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.25em;
+}
+
 @media (max-width: 600px) {
   body {
     max-width: 100%;

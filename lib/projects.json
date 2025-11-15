@@ -68,7 +68,7 @@
     {
         "title": "Bike-Sharing Traffic Visualization",
         "description": "Built an interactive map visualization analyzing 260,000+ bike trips using Mapbox GL JS and D3.js. Time-based filtering reveals commuter patterns throughout the day, with applications in urban planning/transportation network optimization.",
-        "image": "images/bikewatcher.jpeg",
+        "image": "../images/bikewatcher.jpeg",
         "year": 2025,
         "url": "https://d-lightfoot.github.io/bikewatcher/"
 }
