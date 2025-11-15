@@ -66,9 +66,10 @@
         "description": "Non dolorum sed laborum necessitatibus praesentium voluptatibus minima iure atque ut ad cumque vero rem illo cum numquam iusto sunt sint adipisci, repellat nesciunt amet quas quod molestiae earum! Similique!"
     },
     {
-        "title": "Doloribus deserunt vero atque!",
+        "title": "Bike-Sharing Traffic Visualization",
+        "description": "Built an interactive map visualization analyzing 260,000+ bike trips using Mapbox GL JS and D3.js. Time-based filtering reveals commuter patterns throughout the day, with applications in urban planning/transportation network optimization.",
+        "image": "images/bikewatcher.jpeg",
         "year": 2025,
-        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-        "description": "Tempore dolorum qui aut consequatur perspiciatis hic consequuntur! Velit, nulla numquam! Facere neque illum ducimus fugit adipisci magnam placeat vel, nihil ut beatae nesciunt. Voluptate ipsum distinctio atque asperiores mollitia?"
-    }
+        "url": "https://d-lightfoot.github.io/bikewatcher/"
+}
 ]
