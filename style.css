@@ -246,6 +246,35 @@ ul {
   fill: var(--color);
 }
 
+#stats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1em;
+  text-align: center;
+  margin: 2em 0;
+}
+
+#stats div {
+  display: flex;
+  flex-direction: column;
+}
+
+#stats dt {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #666;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+#stats dd {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0;
+  color: var(--color-accent);
+}
+
 .stats {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -312,6 +341,10 @@ circle {
   transition: 200ms;
   transform-origin: center;
   transform-box: fill-box;
+  
+  @starting-style {
+    r: 0;
+  }
 }
 
 circle:hover {
@@ -352,6 +385,76 @@ circle.selected {
   height: auto;
   object-fit: cover;
   border-radius: 0.25em;
+}
+
+#scrolly-1, #scrolly-2 {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+#scrolly-1 > *, #scrolly-2 > * {
+  flex: 1;
+}
+
+#scatter-story, #file-story {
+  position: relative;
+}
+
+#scatter-plot, #file-plot {
+  position: sticky;
+  top: 1rem;
+  align-self: flex-start;
+}
+
+.step {
+  margin: 0;
+  padding: 0;
+}
+
+.step p {
+  margin: 0 0 1.5em 0;
+  line-height: 1.6;
+}
+
+.step:last-child p {
+  margin-bottom: 80vh;
+}
+
+#files {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 1em;
+}
+
+#files > div {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+#files dt {
+  grid-column: 1;
+}
+
+#files dd {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  align-content: start;
+  gap: 0.15em;
+  padding-top: 0.6em;
+  margin-left: 0;
+}
+
+.loc {
+  display: flex;
+  width: 0.5em;
+  aspect-ratio: 1;
+  background: var(--color);
+  border-radius: 50%;
 }
 
 @media (max-width: 600px) {
